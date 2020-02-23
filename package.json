@@ -1,6 +1,12 @@
 {
   "name": "leapic-base-service",
-  "version": "1.0.2",
+  "version": "1.0.6",
+  "homepage": "https://github.com/TaThiTanDev96/leapic-base-service",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TaThiTanDev96/leapic-base-service.git"
+  },
+  "license": "Auth By TaThiTan",
   "description": "LeaPic Base Service And Function",
   "scripts": {
     "build": "tsc",
