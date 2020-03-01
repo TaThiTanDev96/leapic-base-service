@@ -2,8 +2,6 @@
 import { Errors } from "moleculer";
 import { setup } from "../db";
 import { middleware } from "../middlewares";
-import { RocketLogger } from "../rocket-logger/rocket-logger";
-new RocketLogger("mAPP").register([]);
 /**
  * Moleculer ServiceBroker configuration file
  *

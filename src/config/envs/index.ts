@@ -30,30 +30,16 @@ const config = {
     DB_HOST: process.env.DB_HOST || this[env].DB.DB_HOST,
     DB_PORT: Number(process.env.DB_PORT) || this[env].DB.DB_PORT,
     DB_DATABASE: process.env.DB_DATABASE || this[env].DB.DB_DATABASE,
-    DB_PATH_MIGRATIONS:
-      process.env.DB_PATH_MIGRATIONS || this[env].DB.DB_PATH_MIGRATIONS,
+    DB_PATH_MIGRATIONS: process.env.DB_PATH_MIGRATIONS || this[env].DB.DB_PATH_MIGRATIONS,
     DB_PATH_SEEDS: process.env.DB_PATH_SEEDS || this[env].DB.DB_PATH_SEEDS,
-    DB_MIGRATION_FILE_EXTENSION:
-      process.env.DB_MIGRATION_FILE_EXTENSION ||
-      this[env].DB.DB_MIGRATION_FILE_EXTENSION,
-  },
-  REDIS: {
-    host: process.env.REDIS_HOST || this[env].REDIS.HOST,
-    port: process.env.REDIS_PORT || this[env].REDIS.PORT,
-    password: process.env.REDIS_PASSWORD || this[env].REDIS.PASSWORD,
+    DB_MIGRATION_FILE_EXTENSION: process.env.DB_MIGRATION_FILE_EXTENSION || this[env].DB.DB_MIGRATION_FILE_EXTENSION,
   },
   MailService: {
     host: process.env.MAIL_SERVICE_HOST || this[env].MAIL_SERVICE.HOST,
     port: process.env.MAIL_SERVICE_PORT || this[env].MAIL_SERVICE.PORT,
     secure: process.env.MAIL_SERVICE_SECURE || this[env].MAIL_SERVICE.SECURE,
     user: process.env.MAIL_SERVICE_USER || this[env].MAIL_SERVICE.USER,
-    password:
-      process.env.MAIL_SERVICE_PASSWORD || this[env].MAIL_SERVICE.PASSWORD,
-  },
-  RocketConfig: {
-    hostUrl:
-      process.env.ROCKET_HOST_URL || this[env].ROCKET_CHAT_CONFIG.HOST_URL,
-    token: process.env.ROCKET_TOKEN || this[env].ROCKET_CHAT_CONFIG.TOKEN,
+    password: process.env.MAIL_SERVICE_PASSWORD || this[env].MAIL_SERVICE.PASSWORD,
   },
   // MailService: {
   //     host: process.env.MAIL_SERVICE_HOST || 'email-smtp.us-east-1.amazonaws.com',
